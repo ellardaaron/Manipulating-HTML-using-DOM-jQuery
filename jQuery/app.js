@@ -5,16 +5,6 @@ testButton.click(function (){
   alert('any (nice) message')
 })
 
-var niceMessageButton = document.createElement("button");
-niceMessageButton.innerHTML = "Do Something";
-
-var body = document.getElementsByTagName("body")[0];
-body.appendChild(niceMessageButton);
-
-niceMessageButton.addEventListener ("click", function() {
-    alert("any (nice) message");
-  });
-
 2//
 
 $('#btnSubmit').click(function (e) {
