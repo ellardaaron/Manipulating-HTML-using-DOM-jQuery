@@ -59,5 +59,16 @@ myNameButton.click(function(){
 
 6//
 
+var friendNames = ["Katherine", "Ryan", "The Ryan who stands in the back of class", "Jillian", "Sophia", "Torin", "Terrance", "Michala", "Anthony", "Amber"];
 
+let friendCounter = 0;
 
+$('#friendButton').click(function(){
+  if(friendCounter <= friendNames.length - 1) {
+    let listItem = $('<li></li>');
+    let friendName = $(friendNames[friendCounter]);
+    listItem.appendTo(friendName);
+    $('#friendList').appendTo(listItem);
+    friendCounter++
+  } 
+})
