@@ -1,4 +1,9 @@
 1//
+let testButton = $('<button>Do Something</button>');
+testButton.appendTo('body');
+testButton.click(function (){
+  alert('any (nice) message')
+})
 
 var niceMessageButton = document.createElement("button");
 niceMessageButton.innerHTML = "Do Something";
