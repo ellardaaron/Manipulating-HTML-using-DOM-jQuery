@@ -59,16 +59,27 @@ myNameButton.click(function(){
 
 6//
 
-var friendNames = ["Katherine", "Ryan", "The Ryan who stands in the back of class", "Jillian", "Sophia", "Torin", "Terrance", "Michala", "Anthony", "Amber"];
-
 let friendCounter = 0;
 
+var friendNames = ["Katherine", "Ryan", "The Ryan who stands in the back of class", "Jillian", "Sophia", "Torin", "Terrance", "Michala", "Anthony", "Amber"];
+ 
 $('#friendButton').click(function(){
   if(friendCounter <= friendNames.length - 1) {
     let listItem = $('<li></li>');
-    let friendName = $(friendNames[friendCounter]);
-    listItem.appendTo(friendName);
-    $('#friendList').appendTo(listItem);
+    let friendName = $(friendsNames[friendCounter]);
+    $(listItem).append(friendName);
+    $('#friendList').append(listItem);
     friendCounter++
-  } 
+  }
 })
+
+$('friendButton').click(function(){
+  let randomIndex = Math.floor(Math.random() * 10);
+  let friend = f
+})
+
+//--------------------------
+
+  
+
+
